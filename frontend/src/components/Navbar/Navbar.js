@@ -13,6 +13,11 @@ const MenuItems = [
     url: '/agency',
     className: 'nav-links'
   },
+  {
+    title: 'Login',
+    url: '/login',
+    className: 'nav-links'
+  }
 ];
 
 /**

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import {isAuthenticated} from '../../auth';
+
+import {isAuthenticated} from "../../auth";
+import OutlookCalendar from "../OutlookCalendar/OutlookCalendar";
 
 
 /**
@@ -10,7 +12,7 @@ class Home extends Component {
   render() { 
     return ( (!isAuthenticated()) ? <Redirect to="/login" /> :
       (<div>
-        <h2>Home</h2>
+        <OutlookCalendar />
       </div>
     ));
   }
